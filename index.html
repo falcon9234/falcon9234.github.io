@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日大赛-今日大赛热点回顾_全网热议大赛黑料爆料合集</title>
+<meta name="description" content="今日大赛聚合每日热点大赛的讨论焦点、争议细节与网友爆料，梳理事件脉络与舆论走向，帮助读者快速了解今日大赛的最新动态与热议内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314141c'/%3E%3Cpath d='M18 40l10-16 8 12 6-9 4 13z' fill='%23ff5a3c'/%3E%3Ccircle cx='46' cy='20' r='5' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#14141c;
+    --ink-2:#2a2a38;
+    --paper:#f7f4ee;
+    --paper-2:#efeae0;
+    --line:#dcd5c7;
+    --accent:#ff5a3c;
+    --accent-2:#ffd166;
+    --muted:#6d6a63;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{width:min(1120px,100% - 40px);margin-inline:auto;}
+
+  /* Header */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(247,244,238,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0;flex-wrap:wrap;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px;}
+  .brand .mark{width:34px;height:34px;flex:0 0 34px;}
+  nav.main{display:flex;gap:6px;flex-wrap:wrap;font-size:15px;}
+  nav.main a{
+    padding:6px 12px;border-radius:999px;color:var(--ink-2);
+    transition:background .2s,color .2s;
+  }
+  nav.main a:hover{background:var(--ink);color:var(--paper);}
+  .nav-cta{
+    background:var(--accent);color:#fff !important;font-weight:700;
+    padding:8px 16px !important;border-radius:999px;
+  }
+  .nav-cta:hover{background:#e64a2e !important;}
+
+  /* Hero */
+  .hero{padding:52px 0 40px;position:relative;overflow:hidden;}
+  .hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:44px;align-items:center;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;letter-spacing:1.5px;font-weight:700;color:var(--accent);
+    background:rgba(255,90,60,.1);padding:5px 12px;border-radius:999px;
+    margin-bottom:18px;
+  }
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  h1{
+    font-size:clamp(38px,6.2vw,62px);
+    line-height:1.12;margin:0 0 18px;font-weight:900;letter-spacing:-1px;
+  }
+  h1 .hl{position:relative;z-index:1;}
+  h1 .hl::after{
+    content:"";position:absolute;left:-2px;right:-2px;bottom:6px;height:14px;
+    background:var(--accent-2);z-index:-1;border-radius:3px;transform:rotate(-.6deg);
+  }
+  .hero p.lead{font-size:17px;color:var(--ink-2);max-width:52ch;margin:0 0 26px;}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 24px;border-radius:999px;font-weight:700;font-size:15px;
+    border:1.5px solid var(--ink);transition:.2s;
+  }
+  .btn.solid{background:var(--ink);color:var(--paper);}
+  .btn.solid:hover{background:var(--accent);border-color:var(--accent);}
+  .btn.ghost{background:transparent;color:var(--ink);}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper);}
+  .btn[aria-disabled="true"]{opacity:.55;pointer-events:none;}
+  .hero-art{position:relative;}
+  .hero-art .frame{
+    background:var(--ink);border-radius:20px;padding:18px;
+    box-shadow:12px 12px 0 var(--accent-2);
+  }
+  .hero-art .frame svg{width:100%;height:auto;border-radius:8px;}
+
+  /* Ticker */
+  .ticker{
+    background:var(--ink);color:var(--paper);overflow:hidden;
+    border-block:1px solid var(--ink);
+  }
+  .ticker-inner{display:flex;gap:36px;padding:11px 0;font-size:13.5px;white-space:nowrap;overflow-x:auto;scrollbar-width:none;}
+  .ticker-inner::-webkit-scrollbar{display:none;}
+  .ticker-inner span{display:inline-flex;align-items:center;gap:8px;color:#cfc9bd;}
+  .ticker-inner b{color:var(--accent-2);font-weight:700;}
+
+  /* Sections */
+  section{padding:56px 0;}
+  .sec-head{margin-bottom:30px;max-width:62ch;}
+  .sec-tag{font-size:12.5px;letter-spacing:2px;font-weight:800;color:var(--accent);text-transform:uppercase;}
+  h2{font-size:clamp(24px,3.4vw,32px);margin:6px 0 10px;font-weight:900;letter-spacing:-.5px;}
+  .sec-head p{margin:0;color:var(--muted);font-size:15.5px;}
+
+  /* Hot list */
+  .hot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;display:flex;flex-direction:column;gap:10px;
+    transition:transform .22s,box-shadow .22s,border-color .22s;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -16px rgba(20,20,28,.35);border-color:var(--ink);}
+  .rank{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:1px;}
+  .card h3{font-size:18px;margin:0;line-height:1.45;font-weight:800;}
+  .card p{font-size:14.5px;color:var(--muted);margin:0;flex:1;}
+  .meta{display:flex;gap:12px;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;}
+  .meta b{color:var(--ink-2);font-weight:700;}
+
+  /* Timeline */
+  .timeline{display:grid;gap:0;border-left:2px solid var(--line);margin-left:8px;}
+  .tl-item{position:relative;padding:0 0 28px 28px;}
+  .tl-item::before{
+    content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;
+    background:var(--paper);border:2.5px solid var(--accent);
+  }
+  .tl-time{font-size:12.5px;font-weight:800;color:var(--accent);letter-spacing:.5px;}
+  .tl-item h3{font-size:17px;margin:4px 0 6px;font-weight:800;}
+  .tl-item p{margin:0;font-size:14.5px;color:var(--ink-2);}
+
+  /* Two col editorial */
+  .split{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start;}
+  .prose p{font-size:15.5px;color:var(--ink-2);margin:0 0 16px;max-width:62ch;}
+  .prose p b{color:var(--ink);}
+  .side-panel{
+    background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;
+  }
+  .side-panel h3{font-size:16px;margin:0 0 14px;font-weight:800;display:flex;align-items:center;gap:8px;}
+  .side-panel h3 svg{width:18px;height:18px;}
+  .chip-list{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-size:13px;padding:6px 13px;border-radius:999px;background:#fff;
+    border:1px solid var(--line);color:var(--ink-2);transition:.18s;
+  }
+  .chip:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+
+  /* Search */
+  .search-box{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;}
+  .search-box input{
+    flex:1 1 220px;padding:12px 16px;border-radius:999px;border:1.5px solid var(--line);
+    font-size:15px;background:#fff;color:var(--ink);font-family:inherit;
+  }
+  .search-box input:focus{outline:none;border-color:var(--accent);}
+  .search-box button{
+    padding:12px 26px;border-radius:999px;border:none;background:var(--accent);color:#fff;
+    font-weight:800;font-size:15px;cursor:pointer;font-family:inherit;transition:.2s;
+  }
+  .search-box button:hover{background:#e64a2e;}
+  #searchResult{font-size:14px;color:var(--muted);margin-top:12px;min-height:22px;}
+
+  /* FAQ */
+  details{
+    background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:16px 20px;margin-bottom:12px;
+  }
+  details[open]{border-color:var(--ink);}
+  summary{font-weight:800;font-size:15.5px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px;}
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";color:var(--accent);font-size:20px;line-height:1;font-weight:800;}
+  details[open] summary::after{content:"−";}
+  details p{margin:12px 0 0;font-size:14.5px;color:var(--ink-2);}
+
+  /* Footer */
+  footer.site{background:var(--ink);color:#b9b3a6;padding:44px 0 28px;margin-top:20px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:32px;}
+  footer .brand{color:var(--paper);font-size:18px;}
+  footer p{font-size:14px;line-height:1.8;margin:12px 0 0;max-width:38ch;}
+  footer h4{color:var(--paper);font-size:14px;margin:0 0 12px;letter-spacing:.5px;}
+  footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:14px;}
+  footer ul a:hover{color:var(--accent-2);}
+  .foot-bottom{border-top:1px solid #33323f;padding-top:20px;font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+
+  /* Responsive */
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:30px;}
+    .hero-art{order:-1;max-width:420px;}
+    .hot-grid{grid-template-columns:1fr 1fr;}
+    .split{grid-template-columns:1fr;gap:30px;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:620px){
+    .bar{padding:12px 0;}
+    nav.main{font-size:14px;gap:2px;}
+    nav.main a{padding:5px 9px;}
+    .hero{padding:34px 0 30px;}
+    .hero p.lead{font-size:15.5px;}
+    h1{letter-spacing:-.5px;}
+    section{padding:40px 0;}
+    .hot-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .card{padding:18px;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#14141c"/>
+        <path d="M18 40l10-16 8 12 6-9 4 13z" fill="#ff5a3c"/>
+        <circle cx="46" cy="20" r="5" fill="#ffd166"/>
+      </svg>
+      今日大赛
+    </div>
+    <nav class="main">
+      <a href="#hot">热议榜</a>
+      <a href="#timeline">事件脉络</a>
+      <a href="#read">深读</a>
+      <a href="#faq">常见疑问</a>
+      <a href="#search">站内搜索</a>
+      <a class="nav-cta" href="#hot">看今日热点</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>每日更新 · 热点速览</span>
+        <h1><span class="hl">今日大赛</span></h1>
+        <p class="lead">今天被反复刷屏的那场比赛，究竟发生了什么？今日大赛把散落在各处的讨论、截图与爆料归拢到一处，先给结论，再补细节，让你五分钟看懂舆论焦点。</p>
+        <div class="hero-actions">
+          <a class="btn solid" href="#hot">浏览热议榜
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn ghost" href="#timeline">看事件脉络</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="frame">
+          <svg viewBox="0 0 400 300" role="img" aria-label="今日大赛热点讨论示意图">
+            <rect width="400" height="300" fill="#1d1d28"/>
+            <circle cx="330" cy="60" r="34" fill="#ffd166" opacity=".9"/>
+            <path d="M0 232l70-74 52 42 66-96 60 78 52-40 100 92v66H0z" fill="#2a2a38"/>
+            <path d="M0 262l84-58 58 38 72-64 62 56 44-30 80 58v38H0z" fill="#ff5a3c" opacity=".85"/>
+            <rect x="36" y="42" width="150" height="12" rx="6" fill="#f7f4ee" opacity=".9"/>
+            <rect x="36" y="66" width="96" height="9" rx="4.5" fill="#f7f4ee" opacity=".45"/>
+            <rect x="36" y="84" width="120" height="9" rx="4.5" fill="#f7f4ee" opacity=".3"/>
+            <g fill="#ffd166">
+              <circle cx="300" cy="196" r="5"/><circle cx="318" cy="182" r="4"/><circle cx="282" cy="180" r="3"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="wrap ticker-inner">
+      <span><b>热议</b> 评委打分细节被逐帧讨论</span>
+      <span><b>更新</b> 主办方发布一段补充说明</span>
+      <span><b>讨论</b> 现场观众视频出现多个版本</span>
+      <span><b>关注</b> 今日大赛相关词条持续在榜</span>
+    </div>
+  </div>
+
+  <!-- HOT LIST -->
+  <section id="hot">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Hot List</span>
+        <h2>今日大赛热议榜</h2>
+        <p>按讨论热度排列，每条都标注了争议核心与目前可确认的程度，方便你先分清哪些是实拍、哪些还只是转述。</p>
+      </div>
+      <div class="hot-grid">
+        <article class="card">
+          <span class="rank">NO.01 · 评分争议</span>
+          <h3>终场打分被质疑前后不一</h3>
+          <p>多位观众对比现场大屏与线上回放，指出两组分数存在出入。目前流出的画面清晰度有限，尚不能确认是显示延迟还是录入问题。</p>
+          <div class="meta"><span>讨论 <b>高</b></span><span>实锤度 <b>待核实</b></span></div>
+        </article>
+        <article class="card">
+          <span class="rank">NO.02 · 现场片段</span>
+          <h3>观众席视频出现三个版本</h3>
+          <p>同一时间段的现场视频被剪成不同长度流传，差异集中在开头几秒。原始拍摄者尚未公开完整素材，转发时需留意外框信息。</p>
+          <div class="meta"><span>讨论 <b>高</b></span><span>实锤度 <b>部分可查</b></span></div>
+        </article>
+        <article class="card">
+          <span class="rank">NO.03 · 官方回应</span>
+          <h3>主办方补充说明只谈流程</h3>
+          <p>说明中确认了评审环节的时间安排，但未正面回应分数差异。措辞偏流程化，被部分网友认为是回避核心问题。</p>
+          <div class="meta"><span>讨论 <b>中高</b></span><span>实锤度 <b>原文可查</b></span></div>
+        </article>
+        <article class="card">
+          <span class="rank">NO.04 · 选手发声</span>
+          <h3>当事人短声明未提具体名次</h3>
+          <p>声明感谢支持者，表示尊重结果，但没有解释赛后被广泛讨论的细节。评论区追问集中在这一段留白上。</p>
+          <div class="meta"><span>讨论 <b>中</b></span><span>实锤度 <b>原文可查</b></span></div>
+        </article>
+        <article class="card">
+          <span class="rank">NO.05 · 二次传播</span>
+          <h3>截图配文与原始语境脱节</h3>
+          <p>几张被高频转发的截图来自更早的彩排阶段，与正赛并非同一场次。此类错位拼接是今日大赛讨论中最常见的失真来源。</p>
+          <div class="meta"><span>讨论 <b>中</b></span><span>实锤度 <b>已辨伪</b></span></div>
+        </article>
+        <article class="card">
+          <span class="rank">NO.06 · 延伸讨论</span>
+          <h3>评审机制本身成为焦点</h3>
+          <p>争议从单场结果扩散到打分规则，观众希望看到权重构成。这一层讨论已超出事件本身，指向更普遍的赛制透明度问题。</p>
+          <div class="meta"><span>讨论 <b>中</b></span><span>实锤度 <b>观点类</b></span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" style="background:var(--paper-2);border-block:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Timeline</span>
+        <h2>事件脉络：从现场到刷屏</h2>
+        <p>把今日大赛的讨论按时间顺序摊开，能更清楚看出哪些节点真正推动了舆论转向。</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-time">第一阶段 · 现场</span>
+          <h3>结果公布，现场出现短暂议论</h3>
+          <p>终场结果公布后，看台区域出现零散讨论，但当时并未形成规模。这一阶段的素材以观众手机拍摄为主，画质与收音都不稳定。</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">第二阶段 · 扩散</span>
+          <h3>短视频切片开始在多个平台流转</h3>
+          <p>被剪成十几秒的片段先在小范围传播，标题带有明显的情绪倾向。此时多数转发者并未看过完整过程，讨论先从情绪起步。</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">第三阶段 · 对照</span>
+          <h3>网友开始逐帧比对分数画面</h3>
+          <p>有人把现场大屏与回放截取并排，指出差异。今日大赛的讨论重心由此从“结果是否服众”转向“流程是否规范”。</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">第四阶段 · 回应</span>
+          <h3>主办方发布说明，争议未完全平息</h3>
+          <p>说明确认了评审时间安排，但未解释分数出入的具体原因。评论区的主流意见是希望补充分数明细。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- READ -->
+  <section id="read">
+    <div class="wrap split">
+      <div class="prose">
+        <div class="sec-head" style="margin-bottom:20px;">
+          <span class="sec-tag">Deep Read</span>
+          <h2>看懂今日大赛，先分清三种材料</h2>
+        </div>
+        <p><b>第一种是原始素材。</b>现场观众拍摄的完整视频、主办方发布的正式说明、当事人本人的公开表述，这类内容可以直接核对。今日大赛目前的争议，很大一部分卡在原始素材不完整上——关键几秒被剪掉，剩下的部分谁都说不清。</p>
+        <p><b>第二种是二次加工。</b>配了字幕的切片、加了红圈标注的截图、带结论的解说视频。它们能帮你快速定位疑点，但也容易把推测说成事实。看到“实锤”二字时，最好先找原始出处。</p>
+        <p><b>第三种是观点与情绪。</b>这类内容在今日大赛的讨论中占比最高，传播也最快。它们本身不是证据，却能反映大家真正在意什么：不是某一场输赢，而是规则是否被公平执行。</p>
+        <p>把这三类材料分开看，你会发现很多争吵其实源于错位——一方在讨论证据，另一方在表达感受，双方并不在同一个层面交流。这也是热点事件里最常见的误解来源。</p>
+      </div>
+      <aside>
+        <div class="side-panel">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ff5a3c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+            高频关联词
+          </h3>
+          <div class="chip-list">
+            <a class="chip" href="#hot">今日大赛评分</a>
+            <a class="chip" href="#hot">现场视频</a>
+            <a class="chip" href="#timeline">事件时间线</a>
+            <a class="chip" href="#faq">主办方说明</a>
+            <a class="chip" href="#hot">选手回应</a>
+            <a class="chip" href="#read">截图辨伪</a>
+            <a class="chip" href="#hot">赛制讨论</a>
+          </div>
+          <div style="margin-top:22px;padding-top:18px;border-top:1px dashed var(--line);">
+            <h3 style="margin-bottom:10px;">快速订阅</h3>
+            <p style="font-size:14px;color:var(--muted);margin:0 0 14px;">今日大赛的热点常在夜间集中爆发，订阅后可在第二天早上收到一份要点摘要。</p>
+            <a class="btn solid" href="#search" style="font-size:14px;padding:9px 18px;">去搜索页</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SEARCH -->
+  <section id="search" style="background:var(--paper-2);border-block:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Search</span>
+        <h2>在今日大赛里找一条线索</h2>
+        <p>输入关键词，从本页已有的条目中筛选。支持按标题与摘要匹配，结果会即时显示在下方。</p>
+      </div>
+      <form class="search-box" id="searchForm" role="search">
+        <input type="search" id="q" placeholder="例如：评分、视频、回应、赛制" aria-label="搜索今日大赛条目">
+        <button type="submit">搜索</button>
+      </form>
+      <div id="searchResult" aria-live="polite">输入关键词后按回车或点击搜索。</div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">FAQ</span>
+        <h2>关于今日大赛的常见疑问</h2>
+        <p>整理自读者反复提出的几类问题，答案只覆盖目前公开可查的范围。</p>
+      </div>
+      <details open>
+        <summary>今日大赛的分数差异确认了吗？</summary>
+        <p>尚未有公开的完整分数明细。目前能查到的是现场大屏画面与线上回放的截取对比，两者存在出入，但无法排除显示延迟、镜头切换等因素。主办方说明中未涉及这一环节。</p>
+      </details>
+      <details>
+        <summary>网传的现场视频是同一场次吗？</summary>
+        <p>不全是。被高频转发的几张截图来自更早的彩排阶段，与正赛并非同一场次。转发时建议核对画面外框的时间信息与场地布置差异。</p>
+      </details>
+      <details>
+        <summary>为什么今日大赛的讨论会转向赛制？</summary>
+        <p>当单场结果难以核实，讨论自然会上升到规则层面。观众希望看到打分权重、评审构成等基础信息公开，这一诉求已超出事件本身。</p>
+      </details>
+      <details>
+        <summary>本站会持续跟进吗？</summary>
+        <p>会。今日大赛的条目按讨论热度排序，并标注可确认程度。新出现的原始素材与正式说明会优先补充到事件脉络中。</p>
+      </details>
+      <div style="margin-top:26px;">
+        <a class="btn solid" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true" style="width:30px;height:30px;">
+            <rect width="64" height="64" rx="14" fill="#ff5a3c"/>
+            <path d="M18 40l10-16 8 12 6-9 4 13z" fill="#14141c"/>
+            <circle cx="46" cy="20" r="5" fill="#ffd166"/>
+          </svg>
+          今日大赛
+        </div>
+        <p>把每日热点大赛的讨论焦点、争议细节与可查材料归拢到一处，先分清事实与转述，再决定要不要转发。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#hot">热议榜</a></li>
+          <li><a href="#timeline">事件脉络</a></li>
+          <li><a href="#read">深读</a></li>
+          <li><a href="#faq">常见疑问</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关联内容</h4>
+        <ul>
+          <li><a href="#hot">今日大赛评分讨论</a></li>
+          <li><a href="#timeline">现场视频对照</a></li>
+          <li><a href="#search">站内搜索</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2024 今日大赛 · 内容基于公开讨论与可查材料整理</span>
+      <span>观点与事实分层呈现，具体结论以原始素材为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var items = [
+      {t:"终场打分被质疑前后不一", d:"评分争议 现场大屏 线上回放 分数出入 待核实"},
+      {t:"观众席视频出现三个版本", d:"现场片段 视频 剪辑 差异 原始素材"},
+      {t:"主办方补充说明只谈流程", d:"官方回应 说明 评审时间 分数差异 回避"},
+      {t:"当事人短声明未提具体名次", d:"选手发声 声明 尊重结果 评论区"},
+      {t:"截图配文与原始语境脱节", d:"二次传播 截图 彩排阶段 辨伪 失真"},
+      {t:"评审机制本身成为焦点", d:"延伸讨论 打分规则 权重 透明度"},
+      {t:"结果公布，现场出现短暂议论", d:"时间线 现场 结果公布 看台"},
+      {t:"短视频切片开始在多个平台流转", d:"扩散 切片 转发 情绪倾向"},
+      {t:"网友开始逐帧比对分数画面", d:"对照 逐帧 并排 流程规范"},
+      {t:"主办方发布说明，争议未完全平息", d:"回应 说明 补充分数明细"}
+    ];
+    var form = document.getElementById('searchForm');
+    var input = document.getElementById('q');
+    var out = document.getElementById('searchResult');
+    function run(){
+      var q = (input.value || '').trim().toLowerCase();
+      if(!q){
+        out.textContent = '输入关键词后按回车或点击搜索。';
+        return;
+      }
+      var hits = items.filter(function(it){
+        return (it.t + ' ' + it.d).toLowerCase().indexOf(q) > -1;
+      });
+      if(!hits.length){
+        out.textContent = '没有匹配到“' + input.value + '”的条目，试试“评分”“视频”或“说明”。';
+        return;
+      }
+      var html = '找到 ' + hits.length + ' 条相关条目：<br>';
+      hits.forEach(function(it){
+        html += '· <b>' + it.t + '</b> —— ' + it.d + '<br>';
+      });
+      out.innerHTML = html;
+    }
+    form.addEventListener('submit', function(e){ e.preventDefault(); run(); });
+  })();
+</script>
+</body>
+</html>
