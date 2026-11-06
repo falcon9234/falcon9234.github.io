@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>看片网站91-在线看片网站_看片网站91高清影视资源导航</title>
+<meta name="description" content="看片网站91是一个在线影视内容导航页面，汇总热门影片分类、高清资源入口与观看指引，帮助访问者快速找到想看的内容并了解看片网站91的使用方式与常见问题。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151a24'/%3E%3Cpath d='M24 20l22 12-22 12z' fill='%23ff5a5f'/%3E%3C/svg%3E">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#0f131b;--panel:#171d28;--panel2:#1e2634;--line:#2a3344;
+--txt:#e8ecf3;--sub:#9aa6b8;--accent:#ff5a5f;--accent2:#ffb03a;--radius:14px;
+}
+body{background:var(--bg);color:var(--txt);font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(15,19,27,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:26px;height:66px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:18px;letter-spacing:.3px;white-space:nowrap}
+.logo svg{flex:0 0 auto}
+.navlinks{display:flex;gap:22px;margin-left:auto;font-size:14.5px;color:var(--sub)}
+.navlinks a:hover{color:var(--accent2)}
+.navlinks a.active{color:var(--txt)}
+.burger{display:none;margin-left:auto;background:none;border:0;color:var(--txt);cursor:pointer;padding:6px}
+.burger svg{display:block}
+/* hero */
+.hero{padding:56px 0 44px;border-bottom:1px solid var(--line);background:
+radial-gradient(900px 340px at 12% -10%,rgba(255,90,95,.18),transparent 65%),
+radial-gradient(700px 300px at 92% 0%,rgba(255,176,58,.10),transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+h1{font-size:clamp(28px,4.6vw,46px);line-height:1.22;letter-spacing:.5px;font-weight:800}
+.hero .lead{margin-top:16px;color:var(--sub);font-size:16px;max-width:36em}
+.hero .lead b{color:var(--txt);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.tag{font-size:13px;color:#cfd8e6;background:var(--panel2);border:1px solid var(--line);padding:4px 12px;border-radius:999px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-weight:600;font-size:15px;padding:11px 24px;border-radius:10px;border:0;cursor:pointer;transition:.2s}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--accent2);color:var(--accent2);filter:none}
+.btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed;pointer-events:none}
+.hero-art{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#1d2431,#121722)}
+.hero-art svg{display:block;width:100%;height:auto}
+/* search */
+.search{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px;max-width:560px}
+.search input{flex:1 1 200px;background:var(--panel);border:1px solid var(--line);color:var(--txt);padding:11px 14px;border-radius:10px;font-size:15px;outline:none}
+.search input:focus{border-color:var(--accent)}
+.search button{font-size:15px}
+.hint{font-size:13px;color:var(--sub);margin-top:10px}
+/* sections */
+section{padding:52px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:24px;flex-wrap:wrap}
+.sec-head h2{font-size:23px;font-weight:700;letter-spacing:.3px}
+.sec-head p{color:var(--sub);font-size:14px;max-width:40em}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:.22s}
+.card:hover{border-color:#3a475d;transform:translateY(-2px)}
+.card .icon{width:38px;height:38px;border-radius:10px;background:var(--panel2);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.card h3{font-size:16.5px;font-weight:650;margin-bottom:8px}
+.card p{font-size:14.5px;color:var(--sub)}
+.card .meta{margin-top:12px;font-size:12.5px;color:#7f8ca1;display:flex;gap:10px;flex-wrap:wrap}
+.chip{background:#232c3c;color:#c3cede;padding:2px 9px;border-radius:6px}
+.list{display:grid;gap:14px}
+.row{display:grid;grid-template-columns:52px 1fr auto;gap:16px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.row .num{font-size:19px;font-weight:800;color:#3f4b60;text-align:center}
+.row h3{font-size:15.5px;font-weight:600}
+.row p{font-size:13.5px;color:var(--sub);margin-top:2px}
+.row .state{font-size:12.5px;color:var(--accent2);border:1px solid #4a3a1d;background:#2a2113;padding:3px 10px;border-radius:999px;white-space:nowrap}
+/* feature */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.prose h2{font-size:23px;margin-bottom:16px}
+.prose p{color:var(--sub);font-size:15px;margin-bottom:14px}
+.prose p strong{color:var(--txt);font-weight:600}
+.steps{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.steps h3{font-size:16px;margin-bottom:16px}
+.step{display:flex;gap:13px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.step:last-child{border-bottom:0;padding-bottom:0}
+.step .dot{flex:0 0 26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.step p{font-size:14px;color:var(--sub)}
+.step strong{color:var(--txt)}
+/* faq */
+.faq{display:grid;gap:12px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+details[open]{border-color:#3a475d}
+summary{cursor:pointer;font-size:15.5px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent2);font-size:19px;font-weight:700;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin-top:12px;font-size:14.5px;color:var(--sub)}
+/* footer */
+footer{border-top:1px solid var(--line);padding:34px 0 40px;color:var(--sub);font-size:13.5px}
+.foot-top{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:flex-start;margin-bottom:22px}
+.foot-links{display:flex;flex-wrap:wrap;gap:18px}
+.foot-links a:hover{color:var(--accent2)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:18px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px;color:#728096}
+@media (max-width:900px){
+.hero-grid,.feature{grid-template-columns:1fr}
+.g3{grid-template-columns:repeat(2,1fr)}
+.navlinks{display:none}
+.burger{display:block}
+.hero{padding:40px 0 34px}
+section{padding:40px 0}
+}
+@media (max-width:600px){
+.g3,.g2{grid-template-columns:1fr}
+.nav{height:60px;gap:14px}
+.logo{font-size:16px}
+.row{grid-template-columns:40px 1fr;gap:12px}
+.row .state{grid-column:2;justify-self:start}
+.hero-art{order:-1}
+.cta .btn{width:100%;justify-content:center}
+.search button{width:100%}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="看片网站91 首页">
+      <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1e2634"/><path d="M24 19l23 13-23 13z" fill="#ff5a5f"/></svg>
+      <span>看片网站91</span>
+    </a>
+    <nav class="navlinks" aria-label="主导航">
+      <a href="#categories" class="active">影片分类</a>
+      <a href="#ranking">热门榜单</a>
+      <a href="#guide">观看指引</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <button class="burger" aria-label="展开导航" onclick="document.querySelector('#mobileNav').hidden=!document.querySelector('#mobileNav').hidden">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <nav id="mobileNav" hidden style="border-top:1px solid var(--line);background:#141a24">
+    <div class="wrap" style="display:grid;gap:2px;padding:10px 20px 14px;font-size:15px">
+      <a href="#categories" style="padding:9px 0">影片分类</a>
+      <a href="#ranking" style="padding:9px 0">热门榜单</a>
+      <a href="#guide" style="padding:9px 0">观看指引</a>
+      <a href="#faq" style="padding:9px 0">常见问题</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>看片网站91</h1>
+        <p class="lead">一个以影视内容导航为核心的入口页。<b>看片网站91</b>把常见影片类型、近期受关注的条目和观看前的必要说明收拢在一处，让你不必在多个页面之间反复跳转，就能判断下一步该看什么、从哪里进入。</p>
+        <div class="tags">
+          <span class="tag">类型齐全</span>
+          <span class="tag">榜单速览</span>
+          <span class="tag">观看指引</span>
+          <span class="tag">移动端适配</span>
+        </div>
+        <form class="search" role="search" onsubmit="return doSearch(event)">
+          <input id="q" type="search" placeholder="输入片名或类型，如：悬疑、纪录、喜剧" aria-label="搜索片名或类型">
+          <button class="btn" type="submit">查找</button>
+        </form>
+        <p class="hint" id="searchHint">在下方分类与榜单中检索，结果会直接定位到对应条目。</p>
+        <div class="cta">
+          <a class="btn" href="#ranking">查看热门榜单</a>
+          <a class="btn ghost" href="#guide">了解观看流程</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2a3446"/><stop offset="1" stop-color="#161c26"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#ff5a5f"/><stop offset="1" stop-color="#ffb03a"/>
+            </linearGradient>
+          </defs>
+          <rect width="520" height="340" fill="url(#g1)"/>
+          <circle cx="440" cy="60" r="120" fill="#ff5a5f" opacity=".08"/>
+          <circle cx="70" cy="300" r="130" fill="#ffb03a" opacity=".07"/>
+          <rect x="46" y="46" width="300" height="180" rx="14" fill="#131922" stroke="#333e51"/>
+          <rect x="46" y="46" width="300" height="26" rx="14" fill="#1d2532"/>
+          <circle cx="64" cy="59" r="4" fill="#ff5a5f"/><circle cx="78" cy="59" r="4" fill="#ffb03a"/><circle cx="92" cy="59" r="4" fill="#4a5a72"/>
+          <circle cx="196" cy="146" r="34" fill="none" stroke="url(#g2)" stroke-width="3"/>
+          <path d="M186 130l30 16-30 16z" fill="url(#g2)"/>
+          <rect x="66" y="196" width="120" height="8" rx="4" fill="#334056"/>
+          <rect x="66" y="212" width="78" height="8" rx="4" fill="#2a3344"/>
+          <rect x="330" y="140" width="150" height="96" rx="12" fill="#182030" stroke="#333e51"/>
+          <rect x="346" y="158" width="60" height="8" rx="4" fill="#3d4a60"/>
+          <rect x="346" y="176" width="118" height="7" rx="3.5" fill="#2a3344"/>
+          <rect x="346" y="192" width="96" height="7" rx="3.5" fill="#2a3344"/>
+          <rect x="346" y="212" width="52" height="12" rx="6" fill="#ff5a5f" opacity=".85"/>
+          <rect x="46" y="252" width="434" height="1" fill="#2a3344"/>
+          <rect x="46" y="272" width="96" height="34" rx="8" fill="#1d2532" stroke="#333e51"/>
+          <rect x="154" y="272" width="96" height="34" rx="8" fill="#1d2532" stroke="#333e51"/>
+          <rect x="262" y="272" width="96" height="34" rx="8" fill="#1d2532" stroke="#333e51"/>
+          <rect x="370" y="272" width="110" height="34" rx="8" fill="#2a2113" stroke="#4a3a1d"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <section id="categories">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>影片分类入口</h2>
+          <p>按内容类型划分，先确定想看的类别，再进入具体条目。分类页是看片网站91最常被使用的路径。</p>
+        </div>
+        <a class="btn ghost" href="#ranking" style="font-size:14px;padding:8px 18px">跳转榜单</a>
+      </div>
+      <div class="grid g3">
+        <article class="card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffb03a" stroke-width="2"><path d="M12 3l2.5 5.5L20 10l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"/></svg></div>
+          <h3>剧情长片</h3>
+          <p>完整叙事为主的电影条目，适合一次看完。页面标注片长区间与语言信息，方便安排观看时间。</p>
+          <div class="meta"><span class="chip">电影</span><span class="chip">90分钟以上</span></div>
+        </article>
+        <article class="card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff5a5f" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/></svg></div>
+          <h3>连续剧集</h3>
+          <p>分集更新型内容，按季与集数归档。适合追更，也能从第一集开始完整补看。</p>
+          <div class="meta"><span class="chip">剧集</span><span class="chip">分集</span></div>
+        </article>
+        <article class="card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7fb2ff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>纪录片</h3>
+          <p>以真实题材为主的影像内容，节奏相对舒缓，适合对某一领域想深入了解的观众。</p>
+          <div class="meta"><span class="chip">纪实</span><span class="chip">真实题材</span></div>
+        </article>
+        <article class="card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a3e6b8" stroke-width="2"><path d="M4 18V8l8-4 8 4v10l-8 4z"/><path d="M12 12v10"/></svg></div>
+          <h3>喜剧轻喜</h3>
+          <p>轻松向内容，单集或单片时长较短，适合碎片时间观看，也是放松时的常见选择。</p>
+          <div class="meta"><span class="chip">轻松</span><span class="chip">短时长</span></div>
+        </article>
+        <article class="card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a3ff" stroke-width="2"><path d="M12 3a7 7 0 017 7c0 4-7 11-7 11S5 14 5 10a7 7 0 017-7z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <h3>悬疑推理</h3>
+          <p>重情节与线索的内容类型，建议连续观看避免中断，条目页会给出是否含剧透的提示。</p>
+          <div class="meta"><span class="chip">悬疑</span><span class="chip">情节向</span></div>
+        </article>
+        <article class="card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffd08a" stroke-width="2"><path d="M3 12h4l3 7 4-14 3 7h4"/></svg></div>
+          <h3>动作冒险</h3>
+          <p>节奏明快的类型片，视觉冲击较强，适合希望快速进入状态的观看场景。</p>
+          <div class="meta"><span class="chip">动作</span><span class="chip">高节奏</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ranking -->
+  <section id="ranking" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>近期关注榜单</h2>
+          <p>按页面内浏览与检索热度排序的占位示例，用于说明榜单结构；具体条目以实际更新为准。</p>
+        </div>
+        <span class="tag">示例数据</span>
+      </div>
+      <div class="list">
+        <div class="row">
+          <div class="num">01</div>
+          <div><h3>长夜将至</h3><p>悬疑 · 剧情长片 · 双语字幕</p></div>
+          <span class="state">热度较高</span>
+        </div>
+        <div class="row">
+          <div class="num">02</div>
+          <div><h3>城市切片</h3><p>纪录片 · 城市生活 · 6集</p></div>
+          <span class="state">持续更新</span>
+        </div>
+        <div class="row">
+          <div class="num">03</div>
+          <div><h3>周末计划</h3><p>喜剧 · 轻喜 · 单片约100分钟</p></div>
+          <span class="state">口碑稳定</span>
+        </div>
+        <div class="row">
+          <div class="num">04</div>
+          <div><h3>逆风航线</h3><p>动作 · 冒险 · 高清版本</p></div>
+          <span class="state">新上架</span>
+        </div>
+        <div class="row">
+          <div class="num">05</div>
+          <div><h3>第二封信</h3><p>剧情 · 家庭题材 · 分集剧集</p></div>
+          <span class="state">讨论较多</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide / feature -->
+  <section id="guide" style="border-top:1px solid var(--line)">
+    <div class="wrap feature">
+      <div class="prose">
+        <h2>在看片网站91看片前，先弄清三件事</h2>
+        <p><strong>第一，明确内容类型。</strong>电影与剧集的观看节奏差别很大。看片网站91的分类页把电影、剧集、纪录片与轻喜分开陈列，先选类别能显著减少无效浏览。</p>
+        <p><strong>第二，关注版本与语言信息。</strong>条目会标注字幕语言与画质版本。如果你对字幕或配音有偏好，进入播放前先确认这一行信息，比反复切换更省时间。</p>
+        <p><strong>第三，注意条目状态。</strong>榜单中的“持续更新”“新上架”代表内容处于变动期，完整度可能随更新推进。看片网站91会在条目旁标注状态，便于判断是否适合现在开始看。</p>
+        <p>以上三点构成了本页最基本的观看路径：定类型、看版本、辨状态。掌握之后，再使用搜索框按片名查找，效率会更高。</p>
+      </div>
+      <div class="steps">
+        <h3>四步进入观看</h3>
+        <div class="step"><div class="dot">1</div><p><strong>选分类</strong>：从影片分类中确定内容类型。</p></div>
+        <div class="step"><div class="dot">2</div><p><strong>看榜单</strong>：参考近期关注榜，缩小候选范围。</p></div>
+        <div class="step"><div class="dot">3</div><p><strong>核信息</strong>：确认画质、字幕与更新状态。</p></div>
+        <div class="step"><div class="dot">4</div><p><strong>开始看</strong>：进入条目页，按提示完成播放。</p></div>
+        <p style="margin-top:16px;font-size:13px;color:#7f8ca1">客户端下载入口暂未开放，页面保留位置以便后续替换正式地址。</p>
+        <a class="btn ghost" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1" style="margin-top:12px;font-size:14px;padding:9px 20px">下载客户端</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>常见问题</h2>
+          <p>关于看片网站91的使用方式，集中回答访问者最常提出的几类疑问。</p>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>看片网站91是什么性质的页面？</summary>
+          <p>它是一个影视内容导航型首页，主要承担分类索引、榜单速览与观看说明的功能。页面本身不存储影片文件，具体播放与内容以条目页所指向的实际来源为准。</p>
+        </details>
+        <details>
+          <summary>为什么榜单条目标注了“示例数据”？</summary>
+          <p>榜单用于展示排序结构与信息密度，条目名称与状态为说明性示例。真实排序会随浏览与检索情况变化，请以页面实际更新后的列表为准。</p>
+        </details>
+        <details>
+          <summary>搜索框能查到什么？</summary>
+          <p>可按片名关键词或类型词检索本页已有条目，结果会定位到对应内容区块。若未匹配到条目，页面会提示换用更短的关键词。</p>
+        </details>
+        <details>
+          <summary>下载入口为什么不可点击？</summary>
+          <p>客户端下载地址尚未配置，按钮处于禁用状态，避免误触后跳转到无效页面。正式地址上线后即可正常使用。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="logo" style="font-size:16px;margin-bottom:10px">
+          <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1e2634"/><path d="M24 19l23 13-23 13z" fill="#ff5a5f"/></svg>
+          <span>看片网站91</span>
+        </div>
+        <p style="max-width:30em">看片网站91内容导航首页，提供影片分类、榜单速览与观看指引，帮助访问者更快找到想看的内容。</p>
+      </div>
+      <div class="foot-links">
+        <a href="#categories">影片分类</a>
+        <a href="#ranking">热门榜单</a>
+        <a href="#guide">观看指引</a>
+        <a href="#faq">常见问题</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2024 看片网站91 · 内容导航页</span>
+      <span>页面信息以实际更新为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function doSearch(e){
+  e.preventDefault();
+  var q=(document.getElementById('q').value||'').trim();
+  var hint=document.getElementById('searchHint');
+  if(!q){hint.textContent='请输入片名或类型关键词，例如“悬疑”“纪录片”。';return false;}
+  var targets=document.querySelectorAll('#categories .card h3, #ranking .row h3, #categories .card p');
+  var hit=null;
+  for(var i=0;i<targets.length;i++){
+    if(targets[i].textContent.indexOf(q)>-1){hit=targets[i];break;}
+  }
+  if(hit){
+    var el=hit.closest('.card')||hit.closest('.row');
+    el.scrollIntoView({behavior:'smooth',block:'center'});
+    el.style.borderColor='#ff5a5f';
+    setTimeout(function(){el.style.borderColor='';},1800);
+    hint.textContent='已定位到与“'+q+'”相关的内容。';
+  }else{
+    hint.textContent='未找到“'+q+'”相关条目，可尝试更短的类型词或片名关键词。';
+  }
+  return false;
+}
+document.querySelectorAll('#mobileNav a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('mobileNav').hidden=true;});
+});
+</script>
+</body>
+</html>
